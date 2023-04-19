@@ -19,9 +19,65 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        #banner{
+        border: 5px outset red;
+        background-color: lightblue;
+        text-align: center;
+    }
+        div#face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: brown;
+    margin-top: 2rem;
+}
+
+div#face, div#face * {
+    border-radius: 50%;
+}
+
+.eye {
+    width: 25%;
+    height: 25%;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+}
+
+.left.eye {
+    left: 20%;
+}
+
+.right.eye {
+    right: 20%;
+}
+
+.pupil {
+    background: black;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 25%;
+    transform-origin: bottom;
+}
+
+#mouth {
+    position: relative;
+    width: 60%;
+    left: 20%;
+    height: 25%;
+    border: 1vw solid transparent;
+    border-radius: 50%;
+    top: 50%;
+    border-bottom-color: pink;
+}
 
     </style>
 </head>
+
 
 <body>
     <main class="wideMargin">
@@ -37,27 +93,55 @@
             <h2>Heading Examples</h2>
 
             <!-- Put your Headings ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <h1> Me1 </h1>
+            <h2> Me2 </h2>
+            <h3> Me3 </h3>
+            <h4> Me4 </h4>
+            <h5> Me5 </h5>
+            <h6> Me6 </h6>
             <!-- Put your Headings ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
 
             <h2>Examples of "Other" HTML elements</h2>
 
             <!-- Put your 8 examples of other elements ↓↓↓↓↓↓Below↓↓↓↓↓↓ here-->
-
+            <sup>I</sup> went to the <sub>store</sub> to get some <del>mlk</del>  <ins>milk</ins> I later came <small>home</small> and decided to play some <abbr title="Roblox" > RBLX</abbr>  and... <progress value="90" max="100" > </progress > <hr>
             <!-- Put your 8 examples of other elements ↑↑↑↑↑↑Above↑↑↑↑↑↑ here-->
         </div>
         <div id="banner">
+            stuff
         </div>
         <div id="face">
-
+            <div class="left eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div class="right eye">
+                <div class="pupil">
+                </div>
+           </div>
+           <div id="mouth">
+           </div>
         </div>
     </main>
+
+
+    <h1>WhenYouCanNotThinkOfATitle</h1>
+    <section>
+        <h2>Thing 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet eget sit amet tellus cras adipiscing enim. Elementum sagittis vitae et leo duis. Egestas congue quisque egestas diam in arcu cursus euismod. Mauris cursus mattis molestie a. At volutpat diam ut venenatis tellus in. Non tellus orci ac auctor. Aliquet nec ullamcorper sit amet risus. Vel pretium lectus quam id leo. Interdum velit laoreet id donec ultrices tincidunt. Nunc pulvinar sapien et ligula ullamcorper malesuada. Vehicula ipsum a arcu cursus vitae. Pretium lectus quam id leo in vitae turpis. Euismod quis viverra nibh cras pulvinar mattis nunc sed blandit. Fermentum odio eu feugiat pretium nibh. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Ligula ullamcorper malesuada proin libero. Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet.</p>
+    </section>
+    
+    <section>
+        <h2>Thing 2</h2>
+        <p>Nunc eget lorem dolor sed. Condimentum id venenatis a condimentum vitae. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Lobortis elementum nibh tellus molestie. Arcu risus quis varius quam quisque id diam vel. Porta lorem mollis aliquam ut porttitor leo a. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Non nisi est sit amet facilisis. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. In ante metus dictum at tempor commodo. Non quam lacus suspendisse faucibus interdum posuere. Lobortis scelerisque fermentum dui faucibus in. Est velit egestas dui id ornare arcu odio ut. Consectetur purus ut faucibus pulvinar.</p>
+    </section>
+
 
 
     <footer>
 
         <p>
-            <center> Webpage made by <a href="#" target="_blank">[your name]</a></center>
+            <center> Webpage made by <a href="#" target="_blank">[Farhan Mohamed]</a></center>
         </p>
 
     </footer>

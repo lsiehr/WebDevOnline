@@ -7,18 +7,18 @@
 
 <head>
 
-    <title>Music for Web Dev User ## </title>
-
+    <title>Web Dev User 01 </title>
+    <link rel="icon" type="image/x-icon" href="images/icons8-globe-16.png"/>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="My Favorite Music">
+    <meta name="description" content="SHS WebDev Version 3.0">
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -28,9 +28,8 @@
 
     <!-- Custom styles for this template -->
     <style type="text/css">
-        menu {
-            margin: 0;
-            padding: 0;
+        .menu {
+            margin: 0px;
         }
 
         .wideMargin {
@@ -41,15 +40,12 @@
             font-size: 12px;
             text-align: center;
         }
-        td {
-            color: #FF0000;
-           }
     </style>
 </head>
 
 <body>
     <!---------------------------------- Begin the nav-bar ------------->
-    <menu>
+    <div class="menu">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -61,8 +57,8 @@
                     <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="aboutMe.html" class="nav-item nav-link">About Me</a>
-                    <a href="music.html" class="nav-item nav-link active">Music</a>
-                    <a href="list.html" class="nav-item nav-link">Lists</a>
+                    <a href="music.html" class="nav-item nav-link">Music</a>
+                    <a href="list.html" class="nav-item nav-link active">Lists</a>
                     <a href="mailto:sample@gmail.com?Subject=Hello" class="nav-item nav-link disabled"
                         tabindex="-1">Contact</a>
                     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
@@ -72,63 +68,26 @@
                 </div>
             </div>
         </nav>
-    </menu>
-    <!---------------------------------- End the nav-bar ------------------------------------->
+    </div>
+    <!---------------------------------- End the nav-bar ------------->
 
     <main class="wideMargin">
 
-        <h1 class="text-left my-3" tabindex="0">Music</h1><!-- Edit this line for the title of your page -->
+        <h1 class="text-left my-3">My Lists</h1><!-- Edit this line for the title of your page -->
 
-        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h2>My Top 5 Favorite Songs</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Rank</th>
-                    <th>Artist</th>
-                    <th>Song</th>
-                    <th>Album Art</th>
-                </tr>
-            </thead>
-            <tr>
-                <td>1</td>
-                <td>Sitting in this cage</td>
-                <td>hozho</td>
-                <td><img src="images/Sitting_In_This_Cage.jpeg" style="width:100px;height:100px;"></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Virtural Reality</td>
-                <td>Infraction</td>
-                <td><img src="images/Infraction_Virtural_Reality.jpeg" style="width:100px;height:100px;"></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td style="color:#00FF00; background-color:sienna;">Scandinavia</td>
-                <td>Light Protectoin</td>
-                <td><img src="images/Scandinavia.jpeg" style="width:100px;height:100px;"></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Sundown</td>
-                <td>Biscits</td>
-                <td><img src="images/Sundown.jpeg" style="width:100px;height:100px;"></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Moving Blind</td>
-                <td>Sonny Fodera and Dom</td>
-                <td><img src="images/Moving_Blind.jpeg" style="width:100px;height:100px;"></td>
-            </tr>
-        </table>
+    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+<h1>Lists</h1>
+<h2>Ordered List</h2>
+<ol><li>Orderd List Item 1</li><li>Ordered List Item 2</li><li>Ordered List Item 3</li><li>Ordered List Item 4</li><li>Ordered List Item 5</li></ol>
+<h2>Unordered List</h2>
+<ul><li>Unordered List Item 1</li><li>Unordered List Item 2</li><li>Unordered List Item 3</li><li>Unordered List Item 4</li><li>Unordered List Item 5</li></ul>
+    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
-    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
-
 
     <!---------------------------------- Begin the footer ------------->
     <footer class="wideMargin">
         <div>
-            Music can be found here <a href="https://music.amazon.com"> Amazon Music</a>
+            Webpage made by <a href="#" target="_blank">[your name]</a>
         </div>
     </footer>
     <!---------------------------------- End the footer ------------->

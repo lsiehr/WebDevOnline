@@ -18,3 +18,12 @@ th {
 	color: #ffffff;
 	background-color: #003366;
 }
+
+ol {
+	color: orange;
+	font-style: Consolas;
+}
+
+ul {
+color: teal;
+}

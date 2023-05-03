@@ -1,4 +1,5 @@
-table {
+table { @import url(rainbow.css);
+
 	font-family: "Marker Felt", "Comic Sans MS", fantasy;
 	color: #003366;
 	margin-left: auto;
@@ -127,3 +128,11 @@ h1, h2, h3, h4, h5, h6{
   }#morecontent {
 	background-color: yellow;
   }
+  td:hover {
+	background-color: black;
+  }
+
+  selector:pseudo-class {
+	property: value;
+  }
+  

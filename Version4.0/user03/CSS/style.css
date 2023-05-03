@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button {
   background-color: #4caf50;
   border: none;
@@ -125,11 +126,9 @@ h6 {
   position: relative;
   top: 1px;
 }
-
 #morecontent {
   background-color: yellow;
 }
-
 .button_one {
   font-size: 2rem;
   color: rgb(43, 0, 255);
@@ -142,7 +141,27 @@ h6 {
   font-size: 2rem;
   color: rgb(174, 0, 255);
 }
-
-*{
+* {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p:hover {
+  background-color: #FFFF00;
+  
+}
+a:visited {
+  color: #c300ff;
+}
+a:hover {
+  color: #00ff0d;
+}
+
+div li::marker{
+  color: red;
+}
+li ul li::marker{
+  content:"🤓 ";
+}
+#rainbow tr td:hover {
+  background-color: black;
 }

@@ -107,19 +107,6 @@ border-color: orange;
   #morecontent {
 	background-color: yellow;
   }
-  *{
-    text-align:right;
-    border: 2px solid black;
-}
-
-.container
-    {
-		float: left;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50% , -50%);
-    }
 
    .cube
     {

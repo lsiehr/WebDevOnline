@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 4.0
+        Name:
+        Date Completed:
+    -->
+
+<head>
+
+    <title>Gallery</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="WebDev Version 4.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/gallery.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JavaScript -->
+    <!-- These are needed to get the responsive menu to work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        menu {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wideMargin {
+            margin: 15px;
+        }
+
+        footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        #rainbow {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!---------------------------------- Begin the nav-bar ------------->
+    <menu>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="http://shakonet.isd720.com" class="navbar-brand">WebDev</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="display.html" class="nav-item nav-link">Display</a>
+                    <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+                    <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
+                    <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link disabled">Login</a>
+                </div>
+            </div>
+        </nav>
+    </menu>
+    <!---------------------------------- End the nav-bar ------------------------------------->
+
+    <main class="wideMargin">
+
+        <h1 class="text-left my-3 title" tabindex="0">Check out my favorite images</h1>
+        <!-- Edit this line for the title of your page -->
+
+        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+
+        <div id="gallery">
+            <p>Hover over the images to get the answer</p>
+            <div class="container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1jlU9h42tR3NG7jvCTUw_WbYARs4U2slteiq3-nwb1pBRMHBjJ1rpsQAeCgjnwE4tJ9-hHdFL7Ik:https://assets-prd.ignimgs.com/2022/07/13/gaming-motherboards-1657698262268.jpg%3Fwidth%3D1280&usqp=CAU&ec=48600113" alt="ATX_Motherboard">
+                  <p class="caption">(Motherboard)</p>
+                </div>
+                <div class="back">
+                  <a href="https://en.wikipedia.org/wiki/Motherboard" target="_blank">
+                    <h1>Motherboard</h1>
+                  </a>
+                  <p class="description">A motherboard (also called mainboard, main circuit board, or mobo) is the main printed circuit board (PCB) that connects all a computers components.</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="data:image/jpeg;base64,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" alt="RAM Stick">
+                  <p class="caption">(Random Access Memory)</p>
+                </div>
+                <div class="back">
+                  <a href="https://en.wikipedia.org/wiki/Random-access_memory" target="_blank">
+                    <h1>RAM</h1>
+                  </a>
+                  <p class="description">Random-access memory takes data out of slower storage to make it easier to acces for the CPU</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="container">
+              <div class="flipper">
+                <div class="front">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqpdtRS4g4b9lXgr8wVB15sjjlE0zTbnQ0yHNx-66q5g:https://insidetelecom.com/wp-content/uploads/2022/07/Is-the-GPU-Shortage-Over-1000x600.jpg&usqp=CAU&ec=48600113" alt="NVIDIA GPU">
+                  <p class="caption">(Graphics Processing Unit)</p>
+                </div>
+                <div class="back">
+                  <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit" target="_blank">
+                    <h1>GPU</h1>
+                  </a>
+                  <p class="description">A graphics processing unit (GPU) is very good at linear algebra needed to render frames on a display.</p>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+                <div class="flipper">
+                  <div class="front">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMApafDc6RU7o4VCvFgdDe9twoUtBU6mHKaN0ot4QGfZARb98i5t8r1ok93T2wyKuqtVUUDpFtbhE:https://www.totalphase.com/media/blog/2022/08/Intel-CPU1.jpg&usqp=CAU&ec=48600113" alt="CPU_Socket">
+                    <p class="caption">(Centeral Prossessing Unit)</p>
+                  </div>
+                  <div class="back">
+                    <a href="https://en.wikipedia.org/wiki/Central_processing_unit" target="_blank">
+                      <h1>CPU</h1>
+                    </a>
+                    <p class="description" style="font-family: 'Red Hat Mono', monospace;">A centeral processing unit (CPU) is a generalized compputation device capable of computing a wide sort of commands.</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
+    </main>
+
+    <!---------------------------------- Begin the footer ------------->
+    <footer>
+        <span class="title">Example of a Footer Title</span>
+        <span class="title">(Does not work when using adblocker)</span>
+        <table id="footerTable">
+            <tr>
+                <td>
+                    <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                </td>
+                <td>
+                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <!---------------------------------- End the footer ------------->
+</body>
+
+</html>

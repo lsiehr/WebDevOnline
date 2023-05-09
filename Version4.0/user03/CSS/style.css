@@ -145,15 +145,11 @@ h6 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-p:hover {
-  background-color: #FFFF00;
-  
-}
 a:visited {
-  color: #c300ff;
+  color: #ff0000;
 }
 a:hover {
-  color: #00ff0d;
+  color: #0022ff;
 }
 
 div li::marker{

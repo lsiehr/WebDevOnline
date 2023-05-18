@@ -82,4 +82,16 @@ function SelectText() {
         }
     });
 }
+var index = 0;
+function submit(event, value) {
+    if (event.key == "Enter") {
+            document.getElementById("list").innerHTML = document.getElementById("list").innerHTML + "<p id='" + index + "'>" + value + "</p>" + "<button id=b" + index + " type='button' onclick='Delete(`" + index + "`)'>Delete</button>";
+    index = index + 1;
+    }
 
+}
+function Delete(id) {
+document.getElementById(id).remove();
+    var ID = 'b' + id
+document.getElementById(ID).remove();
+}

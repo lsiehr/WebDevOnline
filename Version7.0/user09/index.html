@@ -7,6 +7,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
   <header>
@@ -53,8 +54,16 @@
       <li>Engine: 3.0L Twin-Turbocharged Inline-6</li>
       <li>Horsepower: 425 hp</li>
       <li>0-60 mph: 4.1 seconds</li>
-      <li>Top Speed: 155 mph (electronically limited)</li>
+      <li>Top Speed:      155 mph (electronically limited)</li>
     </ul>
+  </section>
+
+  <section class="game">
+    <h2>Guess the Number</h2>
+    <p>Try to guess a number between 1 and 10:</p>
+    <input type="number" id="guess" min="1" max="10">
+    <button onclick="checkGuess()">Check</button>
+    <p id="result"></p>
   </section>
 
   <section class="contact">
@@ -80,6 +89,20 @@
         arrows: false,
       });
     });
+
+    function checkGuess() {
+      var guess = parseInt(document.getElementById("guess").value);
+      var randomNumber = Math.floor(Math.random() * 10) + 1;
+
+      if (isNaN(guess) || guess < 1 || guess > 10) {
+        document.getElementById("result").textContent = "Please enter a valid number between 1 and 10.";
+      } else if (guess === randomNumber) {
+        document.getElementById("result").textContent = "Congratulations! You guessed the correct number.";
+      } else {
+        document.getElementById("result").textContent = "Sorry, try again. The correct number was " + randomNumber + ".";
+      }
+    }
   </script>
 </body>
 </html>
+

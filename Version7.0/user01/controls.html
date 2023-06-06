@@ -1,0 +1,37 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <script src="/Version7.0/user01/JS/notes.js"></script>   
+</head>
+<nav>
+    <button id="indexButton" class="navButton indexButton" onmouseup="navMouseUp('indexButton')" onmousedown="navMouseDown('indexButton')" onclick="window.location.href='index.html'">Index</button>
+    <button id="notesButton" class="navButton notesButton" onmouseup="navMouseUp('notesButton')" onmousedown="navMouseDown('notesButton')" onclick="window.location.href='notes.html'">Notes</button>
+    <button id="controlsButton" class="navButton controlsButton" onmouseup="navMouseUp('controlsButton')" onmousedown="navMouseDown('controlsButton')" onclick="window.location.href='controls.html'">Controls</button>
+    <button id="filesButton" class="navButton filesButton" onmouseup="navMouseUp('filesButton')" onmousedown="navMouseDown('filesButton')" onclick="window.location.href='files.html'">Form</button>
+    <strong><h1 class="controlsStyle controlsHeading" style="display:inline-block; Margin-left: 10vw;">Controls</h1></strong>    
+</nav>
+<body>
+    <div>
+        <div class="lightControlPanel" style="display:inline-block;">
+            <button id="Ceiling Lights" class="controlButton" onclick="LightClicked('Ceiling Lights')">Ceiling Lights: Off</button>
+            <button id="Mood Lights" class="controlButton" onclick="LightClicked('Mood Lights')">Mood Lights: Off</button>
+            <button id="Decor Lights" class="controlButton" onclick="LightClicked('Decor Lights')">Decor Lights: Off</button>
+        </div>
+
+<div style="display:inline; margin-left:10vw;">
+    <input type="range" id="lockSwitch" min="0" max="1" onclick="lockSwitchUpdate()" style="width:30px;">
+    <p id="lockSwitchLable" style="display:inline-block">Locked</p>
+</div>
+
+
+
+
+        <div style="display:inline;">
+            <div style="display:inline;">
+                <p id="sliderText" class="controlInfoRow">Mode: 5</p>
+            </div>
+            <div>
+                <input type="range" id="slider" min="0" max="9" style="transform: rotate(270deg); float:right;"oninput="sliderUpdate()">
+            </div>
+        </div>
+    </div>
+</body>

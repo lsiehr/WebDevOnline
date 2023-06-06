@@ -1,43 +1,285 @@
-.body-wideMargin {
-    margin: 50px;
-    font-size: 100%;
-    line-height: 1.5;
-    font-family: Roboto;
+.navButton {
+border-width: 0.3vw;
+border-radius: 1vw;
+font-family: Consolas, monaco, monospace;
+font-size:1.5vw;
+border-style: solid;
+flex:left;
+vertical-align: top;
+margin:0.3vw;
+padding: 0.5vw;
+cursor: pointer;
+}
+.navButtonsMouseDown {
+    border-width: 0.1vw;
+    margin-top: 0.7vw;
+    font-size: 1.4vw;
+    margin-left: 0.645vw;
+    margin-right: 0.645vw;
+}
+.indexButton {
+color: rgba(255, 0, 0, 1);
+border-color:rgba(255, 0, 0, 0.5);
+background-color: rgba(128, 0, 0, 0.1);
+text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
+}
+.indexButton:hover {
+    color: rgba(255, 0, 0, 0.8);
+    border-color:rgba(255, 0, 0, 1);
+    background-color: rgba(128, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px 5px rgba(255, 0, 0, 0.5);
+    text-shadow: 0px 0px 0px rgba(255, 0, 0, 0.5);
+}
+.notesButton {
+    color:yellow;
+    border-color: rgba(255, 255, 0, 1);
+    background-color: rgba(255, 255, 0, 0.3);
+    text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.5);
+}
+.notesButton:hover {
+    color: rgba(255, 255, 0, 0.8);
+    border-color: rgba(128, 128, 0, 1);
+    background-color: rgba(128, 128, 0, 0.3);
+    box-shadow: 0px 0px 5px 5px rgba(128, 128, 0, 0.5);
+    text-shadow: 0px 0px 0px rgba(255, 255, 0, 0.5);
+}
+.controlsButton {
+    color:cyan;
+    border-color: rgba(0, 255, 255, 0.5);
+    background-color: rgba(0, 255, 255, 0.05);
+    text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+}
+.controlsButton:hover {
+    color: rgba(0, 255, 255, 0.8);
+    border-color: rgba(0, 255, 255, 1);
+    background-color: rgba(0, 255, 255, 0.3);
+    box-shadow: 0px 0px 5px 5px rgba(0, 255, 255, 0.5);
+    text-shadow: 0px 0px 0px rgba(0, 255, 255, 0.5);
+}
+.filesButton {
+    color:orange;
+    border-color: rgba(255, 165, 0, 0.5);
+    background-color: rgba(255, 165, 0, 0.05);
+    text-shadow: 0px 0px 10px rgba(255, 165, 0, 0.5);
+}
+.filesButton:hover {
+    color: rgba(255, 165, 0, 0.8);
+    border-color: rgba(255, 165, 0, 1);
+    background-color: rgba(255, 165, 0, 0.3);
+    box-shadow: 0px 0px 5px 5px rgba(255, 165, 0, 0.5);
+    text-shadow: 0px 0px 0px rgba(255, 165, 0, 0.5);
 }
 
-button {
-    padding: 5px;
+
+/*Index Styles*/
+.indexStyle {
+    color:red;
+    border-color: cyan;
+}
+.indexHeading {
+    font-size:48;
+    margin: 0.3vw;
+    vertical-align: top;
+    text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.4);
 }
 
-ol {
-    list-style-type: decimal-leading-zero;
+
+/* Notes Styles */
+.noteDelButton {
+    color: rgba(255, 0, 0, 1);
+    background-color: rgba(128, 128, 0, 0.3);
+    border: solid 1px rgba(255, 255, 0, 0.5);
+    border-radius: 4px;
+    float:right;
+}
+.noteDelButton:hover {
+    color: rgba(255, 255, 0, 0.8);
+    border-color: rgba(128, 128, 0, 1);
+    background-color: rgba(128, 128, 0, 0.3);
+    box-shadow: 0px 0px 5px 5px rgba(128, 128, 0, 0.5);
+}
+.notesStyle {
+    color:yellow;
+    font-size: larger;
+}
+.notesHeading {
+    font-size: 48;
+    margin: 0.3vw;
+    flex:left;
+    vertical-align: top;
+    text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.4);
+}
+.note:hover {
+    background-color: rgba(255,255,0,0.3);
+}
+.noteTextBox {
+    background-color: rgba(255, 255, 0, 0.3);
+    border: solid 0.1vw rgba(200, 200, 0, 1);
+    width: 50vw;
+}
+.noteTextBox:focus {
+    background-color: rgba(128, 128, 0, 0.3);
+    border: solid 0.2vw rgba(128, 128, 0, 1);
 }
 
-ol ol {
-    margin-left: 0.9em;
+
+
+/* Controls Styles */
+.controlsStyle {
+    color:cyan;
+}
+.controlsHeading {
+    font-size: 48;
+    margin: 0.3vw;
+    vertical-align: top;
+    text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.4);
+}
+.controlButton {
+    border: solid 0.2vw rgba(0, 255, 255, 0.7);
+    background-color: rgba(0, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    margin: 5px;
+}
+.controlButton:hover{
+    color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 5px 5px rgba(128, 128, 128, 1);
+    cursor: grab;
+}
+.controlButtonMouseDown {
+    border: solid 0.1vw rgba(0, 255, 255, 0.75);
+}
+.controlButtonClicked {
+border: solid 0.3vw rgba(0, 255, 255, 0.5);
+background-color: rgba(0, 255, 255, 0.6);
+color: white;
+box-shadow: 0px 0px 5px 5px rgba(0, 255, 255, 0.5);
+}
+.lightControlPanel {
+    border: solid 5px cyan;
+    margin:0.3vw;
+    padding: 0.3vw;
+    background-color: rgba(0, 255, 255, 0.1);
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    border: solid 0.1vw cyan;
+    border-radius: 10px;
+    background-color: rgba(0, 255, 255, 0.1);
+}
+.controlInfoRow {
+    vertical-align: top;
+    float: right;
+    margin-right: 64px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-ol li {
-    line-height: 1.5;
+
+/*File Styles */
+.filesStyle {
+    color:orange;
+}
+.filesHeading {
+    font-size: 48;
+    margin: 0.3vw;
+    vertical-align: top;
+    text-shadow: 0px 0px 10px rgba(255, 165, 0, 0.4);
+}
+.formTextBox {
+    background-color: rgba(255, 165, 0, 0.1);
+    border: solid 1px rgba(255, 165, 0, 1);
+    color:orange;
+    border-radius: 3px;
+}
+.formTextBox:hover {
+    border-color: rgba(255, 165, 0, 0.4);
+    box-shadow: 0px 0px 5px 5px orange;
+}
+/* Container styles*/
+body {
+    margin:1vw;
+    margin-left: 0.2vw;
+}
+nav {
+    margin: 0.3vw;
+}
+table {
+    border: solid 2px;
+}
+tr, th, td {
+padding: 8px;
+border: solid 1px;
+}
+th {
+font-size: 50px;
+font:bolder;
+}
+* {
+    font-family: Consolas, monaco, monospace;
 }
 
-li li {
-    list-style-type: lower-alpha;
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
-li li li {
-    list-style-type: square;
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-li li li li {
-    list-style-type: circle;
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-h1 {
-    font-family: "Fjalla One", sans-serif;
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: 400;
-    border-bottom: 1px solid black;
-    margin-bottom: 1em;
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
